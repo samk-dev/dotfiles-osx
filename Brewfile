@@ -1,5 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-versions"
+tap "oven-sh/bun"
+# Run your GitHub Actions locally
+brew "act"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Dependency manager for Cocoa projects
@@ -34,6 +37,8 @@ brew "pnpm"
 brew "ripgrep"
 # Powerful, clean, object-oriented scripting language
 brew "ruby@2.7", link: true
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # Web browser focusing on privacy
 cask "brave-browser"
 # App to build and share containerized applications and microservices
@@ -46,17 +51,12 @@ cask "google-chrome"
 cask "httpie"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Collaboration platform for API development
+cask "postman"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin11"
 # Open-source code editor
 cask "visual-studio-code"
-mas "Keynote", id: 409183694
-mas "MusicBox", id: 1614730313
-mas "MusicHarbor", id: 1440405750
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "WireGuard", id: 1451685025
-mas "Xcode", id: 497799835
 vscode "adpyke.codesnap"
 vscode "Angular.ng-template"
 vscode "antfu.goto-alias"
@@ -64,6 +64,7 @@ vscode "ardenivanov.svelte-intellisense"
 vscode "astro-build.astro-vscode"
 vscode "bmewburn.vscode-intelephense-client"
 vscode "bradlc.vscode-tailwindcss"
+vscode "casualjim.gotemplate"
 vscode "CelianRiboulet.webvalidator"
 vscode "christian-kohler.npm-intellisense"
 vscode "christian-kohler.path-intellisense"
@@ -86,7 +87,6 @@ vscode "golang.go"
 vscode "GraphQL.vscode-graphql"
 vscode "GraphQL.vscode-graphql-syntax"
 vscode "janisdd.vscode-edit-csv"
-vscode "jinliming2.vscode-go-template"
 vscode "jrebocho.vscode-random"
 vscode "kisstkondoros.vscode-gutter-preview"
 vscode "mikestead.dotenv"
